@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Aggregated Flights</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" style="padding: 10px;">
+		<div class="jumbotron"
+			style="color: white; background-image: url('/images/airplane.jpg'); background-repeat: no-repeat; background-position: 10% 50%;">
+			<h1>Aggregated Flights</h1>
+		</div>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Airline</th>
+					<th>Departure Airport</th>
+					<th>Arrival Airport</th>
+					<th>Departure Time</th>
+					<th>Arrival Time</th>
+					<th>Cost</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="aggregatedFlight : ${aggregatedFlights}">
+					<td th:text="${aggregatedFlight.airline}"></td>
+					<td th:text="${aggregatedFlight.departureAirport}"></td>
+					<td th:text="${aggregatedFlight.arrivalAirport}"></td>
+					<td th:text="${aggregatedFlight.departureTime}"></td>
+					<td th:text="${aggregatedFlight.arrivalTime}"></td>
+					<td th:text="${aggregatedFlight.cost}"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

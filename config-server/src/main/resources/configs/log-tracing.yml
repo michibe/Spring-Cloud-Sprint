@@ -1,0 +1,9 @@
+server:
+  port: 9411
+zipkin:
+  storage:
+    type: mem
+spring:
+ sleuth:
+   stream:
+    enabled: false

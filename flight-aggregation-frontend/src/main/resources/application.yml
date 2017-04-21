@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+  application:
+    name: flight-aggregation-frontend
+
+    
+# Don't add properties to this file. Any further properties will be managed in the config-server.
