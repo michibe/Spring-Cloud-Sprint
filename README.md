@@ -1,4 +1,4 @@
-![Sprinting Spring man](http://blog.novatec-gmbh.de/wp-content/uploads/2017/06/spring-cloud-sprint-running-spring-man-feature-image-375x215.png)
+![Sprinting Spring man](https://blog.novatec-gmbh.de/wp-content/uploads/2017/06/spring-cloud-sprint-running-spring-man-background.png)
 
 # Spring-Cloud-Sprint
 
